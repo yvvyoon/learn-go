@@ -16,12 +16,14 @@ func main() {
 	// flag 3: greetings: 2020/12/14 15:38:28 empty name
 	// flag 4: greetings: 2020/12/14 15:38:28.564935 empty name
 
-	message, err := greetings.Hello("Yoon")
+	names := []string{"Yoon", "Park", "Min"}
+
+	messages, err := greetings.Hellos(names)
 
 	if err != nil {
 		// error 로그 출력과 함께 프로그램 종료
 		log.Fatal(err)
 	}
 
-	fmt.Println(message)
+	fmt.Println(messages)
 }
