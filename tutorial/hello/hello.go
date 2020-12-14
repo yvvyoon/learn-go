@@ -16,7 +16,7 @@ func main() {
 	// flag 3: greetings: 2020/12/14 15:38:28 empty name
 	// flag 4: greetings: 2020/12/14 15:38:28.564935 empty name
 
-	message, err := greetings.Hello("")
+	message, err := greetings.Hello("Yoon")
 
 	if err != nil {
 		// error 로그 출력과 함께 프로그램 종료
